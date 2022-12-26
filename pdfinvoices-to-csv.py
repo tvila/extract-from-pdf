@@ -18,7 +18,6 @@ for i in range(64):
     for row in text.split("\n"):
         num_factura = re.search(num_factura_pattern, row)
         fecha_factura = re.search(fecha_factura_pattern, row)
-        comp_dict = []
 
         if num_factura:
             fc = num_factura.group()
